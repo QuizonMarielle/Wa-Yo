@@ -1,0 +1,173 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #313131; }
+
+.border-bottom, .waffle-border hr, .b-container hr {
+  width: 5%;
+  border-bottom: 5px solid #ff8800;
+  border: 0;
+  border-top: 3px solid #ff8800; }
+
+.logo {
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 1rem;
+  float: left;
+  clear: both;
+  color: #FFFFFF;
+  font-family: "Permanent Marker", cursive; }
+
+#hamburger-trigger {
+  display: none; }
+
+.hamburger {
+  position: absolute;
+  top: 5em;
+  right: 5%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 5; }
+  .hamburger div {
+    position: relative;
+    width: 3em;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #f8982b;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out; }
+
+.site-menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #090E6B;
+  top: -100vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0); }
+  .site-menu .nav-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100vh; }
+  .site-menu nav {
+    text-align: left;
+    margin-left: 25%; }
+    .site-menu nav a {
+      position: relative;
+      text-decoration: none;
+      color: #6ecddd;
+      font-size: 2em;
+      display: inline-block;
+      margin-top: 1.25em;
+      transition: color 0.2s ease-in-out;
+      letter-spacing: 1px; }
+    .site-menu nav a:before {
+      content: '';
+      height: 0;
+      position: absolute;
+      width: 0.25em;
+      background-color: white;
+      left: -0.5em;
+      transition: all 0.2s ease-in-out; }
+
+#hamburger-trigger:checked + .hamburger .top {
+  transform: rotate(-45deg);
+  margin-top: 25px; }
+
+#hamburger-trigger:checked + .hamburger .bottom {
+  opacity: 0;
+  transform: rotate(45deg); }
+
+#hamburger-trigger:checked + .hamburger .mid {
+  transform: rotate(45deg);
+  margin-top: -7px; }
+
+#hamburger-trigger:checked + .hamburger + .site-menu {
+  top: 0;
+  transform: scale(1); }
+
+.pimg, .pimg1 {
+  position: relative;
+  opacity: 0.80;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 4rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-family: "Permanent Marker", cursive; }
+
+.pimg1 {
+  background-image: url(../imgs/bg-header2.jpg);
+  min-height: 100%; }
+
+.waffle-border {
+  position: relative;
+  bottom: 5rem; }
+  .waffle-border h1 {
+    text-align: center;
+    font-family: "Lobster", cursive;
+    font-size: 4em;
+    margin-top: 3rem;
+    margin-bottom: 0; }
+  .waffle-border img {
+    width: 18em;
+    margin: 0 auto;
+    display: block;
+    border: 5px solid #FFFFFF;
+    border-radius: 100%;
+    background-color: #FFFFFF; }
+  .waffle-border hr {
+    margin-top: 2em; }
+
+.b-container {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .b-container img {
+    display: block;
+    margin: 0 auto; }
+  .b-container h3 {
+    margin-top: 2em;
+    margin-bottom: 0; }
+  .b-container p {
+    margin: 0 10px;
+    padding: 1em; }
+  .b-container hr {
+    margin-top: 1rem;
+    width: 3rem; }
+
+.history-page {
+  display: flex;
+  justify-content: center; }
+  .history-page .his-image {
+    position: relative; }
+  .history-page #stack {
+    left: 0px;
+    top: 0px;
+    z-index: -1; }
+  .history-page #stack-right {
+    position: absolute;
+    left: 10em;
+    top: 10em; }
+
+/*# sourceMappingURL=main.css.map */
