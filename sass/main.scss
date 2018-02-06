@@ -7,7 +7,7 @@ $text-white: #FFFFFF;
 $trigger-width: 25px;
 $trigger-border-weight: 3px;
 $trigger-color: #fff;
-$hr-color: #ff8800;
+$hr-color: #f41313;
 
 
 //Base
@@ -158,6 +158,11 @@ body, html {
   opacity: 0.90;
 }
 
+.section-two {
+  height: 100vh;
+  color: $ptext-color;
+  font-family: $font-Sans;
+
 .waffle-border {
   position: relative;
   bottom: 5rem;
@@ -166,17 +171,18 @@ body, html {
     text-align: center;
     font-family: $font-Lobster;
     font-size: 4em;
-    margin-top: 3rem;
+    margin-top: 5px;
     margin-bottom: 0;
   }
 
   img {
-    width: 18em;
+    position: relative;
+    bottom: 1rem;
+    width: 25em;
     margin: 0 auto;
     display: block;
-    border: 5px solid #FFFFFF;
     border-radius: 100%;
-    background-color: #FFFFFF;
+    background: $text-white;
   }
 
   hr {
@@ -198,11 +204,13 @@ body, html {
   h3 {
     margin-top: 2em;
     margin-bottom: 0;
+    font-weight: bold;
   }
 
   p {
     margin: 0 10px;
     padding: 1em;
+    font-size: 1.5rem;
   }
 
   a {
@@ -215,11 +223,12 @@ body, html {
     margin-top: 1rem;
     width: 3rem;
   }
+}
 } // End Section Two
 
 .section-three {
     background: #f6f6f6;
-    margin-top: 5em;
+    margin: 0;
     height: 90vh;
 
 .history-page {
@@ -246,7 +255,7 @@ h2 {
 
 hr {
   @extend .border-bottom;
-  width: 10%;
+  width: 15%;
   margin: 2rem 0;
 }
 
@@ -256,7 +265,7 @@ p {
 }
 
 .btn-default {
-  background: #f41313;
+  background: $hr-color;
   color: $text-white;
   font-family: $font-Sans;
   text-transform: uppercase;

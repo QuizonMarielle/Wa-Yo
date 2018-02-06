@@ -7,11 +7,11 @@ body, html {
   line-height: 1.8em;
   color: #000009; }
 
-.border-bottom, .waffle-border hr, .b-container hr, .section-three hr {
+.border-bottom, .section-two .waffle-border hr, .section-two .b-container hr, .section-three hr {
   width: 5%;
-  border-bottom: 5px solid #ff8800;
+  border-bottom: 5px solid #f41313;
   border: 0;
-  border-top: 3px solid #ff8800; }
+  border-top: 3px solid #f41313; }
 
 .logo {
   font-size: 3rem;
@@ -121,48 +121,54 @@ body, html {
   background-image: url(../imgs/bg-header.jpg);
   opacity: 0.90; }
 
-.waffle-border {
-  position: relative;
-  bottom: 5rem; }
-  .waffle-border h1 {
-    text-align: center;
-    font-family: "Lobster", cursive;
-    font-size: 4em;
-    margin-top: 3rem;
-    margin-bottom: 0; }
-  .waffle-border img {
-    width: 18em;
-    margin: 0 auto;
-    display: block;
-    border: 5px solid #FFFFFF;
-    border-radius: 100%;
-    background-color: #FFFFFF; }
-  .waffle-border hr {
-    margin-top: 2em; }
-
-.b-container {
-  display: flex;
-  justify-content: center;
-  text-align: center; }
-  .b-container img {
-    display: block;
-    margin: 0 auto; }
-  .b-container h3 {
-    margin-top: 2em;
-    margin-bottom: 0; }
-  .b-container p {
-    margin: 0 10px;
-    padding: 1em; }
-  .b-container a {
-    text-decoration: none;
-    background: #000009; }
-  .b-container hr {
-    margin-top: 1rem;
-    width: 3rem; }
+.section-two {
+  height: 100vh;
+  color: #000009;
+  font-family: "Source Sans Pro", sans-serif; }
+  .section-two .waffle-border {
+    position: relative;
+    bottom: 5rem; }
+    .section-two .waffle-border h1 {
+      text-align: center;
+      font-family: "Lobster", cursive;
+      font-size: 4em;
+      margin-top: 5px;
+      margin-bottom: 0; }
+    .section-two .waffle-border img {
+      position: relative;
+      bottom: 1rem;
+      width: 25em;
+      margin: 0 auto;
+      display: block;
+      border-radius: 100%;
+      background: #FFFFFF; }
+    .section-two .waffle-border hr {
+      margin-top: 2em; }
+  .section-two .b-container {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+    .section-two .b-container img {
+      display: block;
+      margin: 0 auto; }
+    .section-two .b-container h3 {
+      margin-top: 2em;
+      margin-bottom: 0;
+      font-weight: bold; }
+    .section-two .b-container p {
+      margin: 0 10px;
+      padding: 1em;
+      font-size: 1.5rem; }
+    .section-two .b-container a {
+      text-decoration: none;
+      background: #000009; }
+    .section-two .b-container hr {
+      margin-top: 1rem;
+      width: 3rem; }
 
 .section-three {
   background: #f6f6f6;
-  margin-top: 5em;
+  margin: 0;
   height: 90vh; }
   .section-three .history-page {
     display: grid;
@@ -181,7 +187,7 @@ body, html {
     font-family: "Lobster", cursive;
     font-size: 4em; }
   .section-three hr {
-    width: 10%;
+    width: 15%;
     margin: 2rem 0; }
   .section-three p {
     font-family: "Source Sans Pro", sans-serif;
