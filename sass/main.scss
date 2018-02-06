@@ -1,5 +1,5 @@
 //Fonts
-$ptext-color: #313131;
+$ptext-color: #000009;
 $header-font: 'Permanent Marker', cursive;
 $font-Sans: 'Source Sans Pro', sans-serif;
 $font-Lobster: 'Lobster', cursive;
@@ -137,6 +137,7 @@ body, html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100%;
 }
 
 .ptext {
@@ -153,8 +154,8 @@ body, html {
 
 .pimg1 {
   @extend .pimg;
-  background-image: url(../imgs/bg-header2.jpg);
-  min-height: 100%;
+  background-image: url(../imgs/bg-header.jpg);
+  opacity: 0.90;
 }
 
 .waffle-border {
@@ -204,22 +205,72 @@ body, html {
     padding: 1em;
   }
 
+  a {
+    text-decoration: none;
+    background: $ptext-color;
+  }
+
   hr {
     @extend .border-bottom;
     margin-top: 1rem;
     width: 3rem;
   }
-}
+} // End Section Two
+
+.section-three {
+    background: #f6f6f6;
+    margin-top: 5em;
+    height: 90vh;
 
 .history-page {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2em;
+    position: relative;
+    top: 2em;
+}
 
 .his-description {
-
+  align-self: center;
+  position: relative;
+  top: 4em;
+  left: 8em;
+  margin: 3em;
+  padding: 2em;
 }
+
+h2 {
+  font-family: $font-Lobster;
+  font-size: 4em;
+}
+
+hr {
+  @extend .border-bottom;
+  width: 10%;
+  margin: 2rem 0;
+}
+
+p {
+  font-family: $font-Sans;
+  font-size: 1.2em;
+}
+
+.btn-default {
+  background: #f41313;
+  color: $text-white;
+  font-family: $font-Sans;
+  text-transform: uppercase;
+  border-radius: 2px;
+  margin-top: 2rem;
+  width: 25%;
+  padding: 8px;
+}
+
 .his-image {
     position: relative;
+    top: 5em;
+    right: 1em;
+    margin: 1em 0 0 10em;
 }
     #stack {
     left: 0px;
@@ -232,4 +283,15 @@ body, html {
     left: 10em;
     top: 10em;
     }
+} // End Section Three
+
+.pimg2 {
+  @extend .pimg;
+  background-image: url(../imgs/bg-header2.jpg);
+  margin: 5em;
+  background-attachment: scroll;
+
+  .border {
+    color: $ptext-color;
+  }
 }

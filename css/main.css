@@ -5,9 +5,9 @@ body, html {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.8em;
-  color: #313131; }
+  color: #000009; }
 
-.border-bottom, .waffle-border hr, .b-container hr {
+.border-bottom, .waffle-border hr, .b-container hr, .section-three hr {
   width: 5%;
   border-bottom: 5px solid #ff8800;
   border: 0;
@@ -97,13 +97,14 @@ body, html {
   top: 0;
   transform: scale(1); }
 
-.pimg, .pimg1 {
+.pimg, .pimg1, .pimg2 {
   position: relative;
   opacity: 0.80;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  min-height: 100%; }
 
 .ptext {
   position: absolute;
@@ -117,8 +118,8 @@ body, html {
   font-family: "Permanent Marker", cursive; }
 
 .pimg1 {
-  background-image: url(../imgs/bg-header2.jpg);
-  min-height: 100%; }
+  background-image: url(../imgs/bg-header.jpg);
+  opacity: 0.90; }
 
 .waffle-border {
   position: relative;
@@ -152,22 +153,67 @@ body, html {
   .b-container p {
     margin: 0 10px;
     padding: 1em; }
+  .b-container a {
+    text-decoration: none;
+    background: #000009; }
   .b-container hr {
     margin-top: 1rem;
     width: 3rem; }
 
-.history-page {
-  display: flex;
-  justify-content: center; }
-  .history-page .his-image {
-    position: relative; }
-  .history-page #stack {
+.section-three {
+  background: #f6f6f6;
+  margin-top: 5em;
+  height: 90vh; }
+  .section-three .history-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2em;
+    position: relative;
+    top: 2em; }
+  .section-three .his-description {
+    align-self: center;
+    position: relative;
+    top: 4em;
+    left: 8em;
+    margin: 3em;
+    padding: 2em; }
+  .section-three h2 {
+    font-family: "Lobster", cursive;
+    font-size: 4em; }
+  .section-three hr {
+    width: 10%;
+    margin: 2rem 0; }
+  .section-three p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.2em; }
+  .section-three .btn-default {
+    background: #f41313;
+    color: #FFFFFF;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin-top: 2rem;
+    width: 25%;
+    padding: 8px; }
+  .section-three .his-image {
+    position: relative;
+    top: 5em;
+    right: 1em;
+    margin: 1em 0 0 10em; }
+  .section-three #stack {
     left: 0px;
     top: 0px;
     z-index: -1; }
-  .history-page #stack-right {
+  .section-three #stack-right {
     position: absolute;
     left: 10em;
     top: 10em; }
+
+.pimg2 {
+  background-image: url(../imgs/bg-header2.jpg);
+  margin: 5em;
+  background-attachment: scroll; }
+  .pimg2 .border {
+    color: #000009; }
 
 /*# sourceMappingURL=main.css.map */
