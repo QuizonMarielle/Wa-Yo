@@ -97,7 +97,7 @@ body, html {
   top: 0;
   transform: scale(1); }
 
-.pimg, .pimg1, .pimg2 {
+.pimg, .pimg1, .pimg2, .pimg3 {
   position: relative;
   opacity: 0.80;
   background-position: center;
@@ -168,7 +168,7 @@ body, html {
 
 .section-three {
   background: #f6f6f6;
-  margin: 0;
+  margin-top: 5em;
   height: 90vh; }
   .section-three .history-page {
     display: grid;
@@ -223,62 +223,65 @@ body, html {
     color: #000009; }
 
 .section-four {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 100vh; }
-  .section-four .menu, .section-four .menu-one, .section-four .menu-two, .section-four .menu-three, .section-four .menu-four, .section-four .menu-five, .section-four .menu-six, .section-four .menu-seven, .section-four .menu-eight, .section-four .menu-nine {
-    position: relative;
-    width: 25%;
-    height: 50%;
-    margin: 2.5em; }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .section-four .menu {
+    min-height: 100%; }
   .section-four .menu-opacity, .section-four .menu-one:hover > .menu-content, .section-four .menu-two:hover > .menu-content, .section-four .menu-three:hover > .menu-content, .section-four .menu-four:hover > .menu-content, .section-four .menu-five:hover > .menu-content, .section-four .menu-six:hover > .menu-content, .section-four .menu-seven:hover > .menu-content, .section-four .menu-eight:hover > .menu-content, .section-four .menu-nine:hover > .menu-content {
     opacity: 0;
-    transition: opacity 500ms ease; }
-  .section-four .menu-content {
-    padding: 5px; }
+    transition: opacity 300ms ease; }
+  .section-four .menu-one, .section-four .menu-two, .section-four .menu-three, .section-four .menu-four,
+  .section-four .menu-five, .section-four .menu-six, .section-four .menu-seven, .section-four .menu-eight, .section-four .menu-nine {
+    margin: 0 5em 5em 5em;
+    height: 100%; }
   .section-four .menu-one:hover {
     background: url(../imgs/his2-final.jpg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-left: 5em; }
   .section-four .menu-two {
-    top: 10em; }
+    margin-top: 10em; }
   .section-four .menu-two:hover {
     background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-left: 5em; }
   .section-four .menu-three:hover {
     background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat; }
-  .section-four .menu-four {
-    right: 1em; }
+    background-repeat: no-repeat;
+    margin-left: 5em; }
   .section-four .menu-four:hover {
     background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-left: 5em; }
   .section-four .menu-five {
-    top: 10em;
-    right: 1em; }
+    margin-top: 10em; }
   .section-four .menu-five:hover {
     background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat; }
-  .section-four .menu-six {
-    right: 1em; }
+    background-repeat: no-repeat;
+    margin-left: 5em; }
   .section-four .menu-six:hover {
     background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat; }
-  .section-four .menu-seven {
-    right: 1em; }
+    background-repeat: no-repeat;
+    margin-left: 5em; }
   .section-four .menu-seven:hover {
     background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-left: 5em; }
   .section-four .menu-eight {
-    right: 1em;
-    top: 10em; }
+    margin-top: 10em; }
   .section-four .menu-eight:hover {
     background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat; }
-  .section-four .menu-nine {
-    right: 1em; }
+    background-repeat: no-repeat;
+    margin-left: 5em; }
   .section-four .menu-nine:hover {
     background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-left: 5em; }
+
+.pimg3 {
+  background-image: url(../imgs/bg-header2.jpg);
+  margin: 5em;
+  background-attachment: scroll; }
+  .pimg3 .border {
+    color: #000009; }
 
 /*# sourceMappingURL=main.css.map */

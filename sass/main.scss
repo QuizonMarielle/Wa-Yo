@@ -228,7 +228,7 @@ body, html {
 
 .section-three {
     background: #f6f6f6;
-    margin: 0;
+    margin-top: 5em;
     height: 90vh;
 
 .history-page {
@@ -306,36 +306,30 @@ p {
 }
 
 .section-four {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
 // Section Four Extends
   .menu {
-      position: relative;
-      width: 25%;
-      height: 50%;
-      margin: 2.5em;
+    min-height: 100%;
   }
 
   .menu-opacity {
-    opacity:0; transition:opacity 500ms ease;
+    opacity:0; transition:opacity 300ms ease;
   }
 
 // End Section Four Extends
 
-  .menu-one {
-    @extend .menu;
-  }
-
-  .menu-content {
-    padding: 5px;
+  .menu-one, .menu-two, .menu-three, .menu-four,
+  .menu-five, .menu-six, .menu-seven, .menu-eight, .menu-nine {
+    margin: 0 5em 5em 5em;
+    height: 100%;
   }
 
   .menu-one:hover {
     background: url(../imgs/his2-final.jpg);
     background-repeat: no-repeat;
+    margin-left: 5em;
   }
 
   .menu-one:hover > .menu-content {
@@ -343,40 +337,34 @@ p {
   }
 
   .menu-two {
-    @extend .menu;
-    top: 10em;
+    margin-top: 10em;
   }
 
   .menu-two:hover {
     background: url(../imgs/his1-final.jpg);
     background-repeat: no-repeat;
+    margin-left: 5em;
   }
 
   .menu-two:hover > .menu-content {
     @extend .menu-opacity;
   }
 
-  .menu-three {
-    @extend .menu;
-  }
-
   .menu-three:hover {
     background: url(../imgs/his1-final.jpg);
     background-repeat: no-repeat;
+    margin-left: 5em;
+
   }
 
   .menu-three:hover > .menu-content {
     @extend .menu-opacity;
   }
 
-  .menu-four {
-    @extend .menu;
-    right: 1em;
-  }
-
   .menu-four:hover {
     background: url(../imgs/his1-final.jpg);
     background-repeat: no-repeat;
+    margin-left: 5em;
   }
 
   .menu-four:hover > .menu-content {
@@ -384,42 +372,33 @@ p {
   }
 
   .menu-five {
-    @extend .menu;
-    top: 10em;
-    right: 1em;
+    margin-top: 10em;
   }
 
   .menu-five:hover {
     background: url(../imgs/his1-final.jpg);
     background-repeat: no-repeat;
+    margin-left: 5em;
   }
 
   .menu-five:hover > .menu-content {
     @extend .menu-opacity;
   }
 
-  .menu-six {
-    @extend .menu;
-    right: 1em;
-  }
-
   .menu-six:hover {
     background: url(../imgs/his1-final.jpg);
     background-repeat: no-repeat;
+    margin-left: 5em;
   }
 
   .menu-six:hover > .menu-content {
     @extend .menu-opacity;
   }
 
-  .menu-seven {
-    @extend .menu;
-    right: 1em;
-  }
-
   .menu-seven:hover {
     background: url(../imgs/his1-final.jpg);
     background-repeat: no-repeat;
+    margin-left: 5em;
   }
 
   .menu-seven:hover > .menu-content {
@@ -427,31 +406,38 @@ p {
   }
 
   .menu-eight {
-    @extend .menu;
-    right: 1em;
-    top: 10em;
+    margin-top: 10em;
   }
 
   .menu-eight:hover {
     background: url(../imgs/his1-final.jpg);
     background-repeat: no-repeat;
+    margin-left: 5em;
   }
 
   .menu-eight:hover > .menu-content {
     @extend .menu-opacity;
   }
 
-  .menu-nine {
-    @extend .menu;
-    right: 1em;
-  }
-
   .menu-nine:hover {
     background: url(../imgs/his1-final.jpg);
     background-repeat: no-repeat;
+    margin-left: 5em;
   }
 
   .menu-nine:hover > .menu-content {
     @extend .menu-opacity;
+  }
+}
+
+// Pimg 3
+  .pimg3 {
+  @extend .pimg;
+  background-image: url(../imgs/bg-header2.jpg);
+  margin: 5em;
+  background-attachment: scroll;
+
+  .border {
+    color: $ptext-color;
   }
 }
