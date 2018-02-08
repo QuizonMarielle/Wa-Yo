@@ -3,40 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Wa-Yo</title>
-    <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
 
     <header class="pimg1">
-        <span class="logo">Wa-Yo</span>
+      <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-toggle" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    <a name="Home" class="navbar-brand nav-link">Wa-Yo</a>
+      </div>
 
-        <input id="hamburger-trigger" type="checkbox">
-        <label for="hamburger-trigger" class="hamburger">
-          <span class="top"></span>
-          <span class="mid"></span>
-          <span class="bot"></span>
-        </label>
-
-        <div class="site-menu">
-          <div class="site-menu-wrapper">
-            <nav>
-              <a href="#">Home</a>
-              <a href="#">Health Benefits</a>
-              <a href="#">Our History</a>
-              <a href="#">Menu</a>
-              <a href="#">Drinks</a>
-              <a href="#">Location</a>
-              <a href="#">Contact Page</a>
-            </nav>
+    <div class="collapse navbar-collapse" id="nav-toggle">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#Home" class="nav-link home">Home</a></li>
+          <li><a href="#Services" class="nav-link">Services</a></li>
+          <li><a href="#Portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#Contact" class="nav-link">Contact Me</a></li>
+        </ul>
     </div>
-  </div>
+    </div>
+  </nav>
 
       <div class="ptext">
         <span class="border">

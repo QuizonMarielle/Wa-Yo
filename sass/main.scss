@@ -29,105 +29,39 @@ body, html {
   border-top: 3px solid $hr-color;
 }
 
-//Logo
-  .logo {
-    font-size: 3rem;
-    padding: 2rem;
+//Nav
+.navbar-default {
+  background: $text-white;
+}
+
+.navbar-default .navbar-brand {
+    color: $ptext-color;
+}
+
+.navbar-brand {
+    padding: 1em;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    padding: 1rem;
     margin: 1rem;
-    float: left;
-    clear: both;
     color: $text-white;
     font-family: $header-font;
-  }
-
-//hamburger
-#hamburger-trigger {
-  display: none;
 }
 
-.hamburger {
-  position: absolute;
-  top: 5em;
-  right: 5%;
-  margin-left: -2em;
-  margin-top: -45px;
-  width: 2em;
-  height: 45px;
-  z-index: 5;
-
-  div {
-  position: relative;
-  width: 3em;
-  height: 7px;
-  border-radius: 3px;
-  background-color: #f8982b;
-  margin-top: 8px;
-  transition: all 0.3s ease-in-out;
-  }
+.navbar .navbar-nav > li > a {
+  color: $ptext-color;
+  line-height: 3rem;
+  padding-left: 3rem;
 }
 
-//Nav
-.site-menu {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background-color: #090E6B;
-  top: -100vh; left: 0; right: 0; bottom: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  transform: scale(0);
-
-  .nav-wrapper {
-  position: relative;
-  overflow: hidden;
-  overflow-y: auto;
-  height: 100vh;
-  }
-
-  nav {
-  text-align: left;
-  margin-left: 25%;
-
-  a {
-   position: relative;
-   text-decoration: none;
-   color: #6ecddd;
-   font-size: 2em;
-   display: inline-block;
-   margin-top: 1.25em;
-   transition: color 0.2s ease-in-out;
-   letter-spacing: 1px;
-    }
-
-  a:before {
-  content: '';
-  height: 0;
-  position: absolute;
-  width: 0.25em;
-  background-color: white;
-  left: -0.5em;
-  transition: all 0.2s ease-in-out;
-  }
-
-} // End Nav
-}// Site Menu
-
-#hamburger-trigger:checked + .hamburger .top {
-  transform: rotate(-45deg);
-  margin-top: 25px;
-}
-#hamburger-trigger:checked + .hamburger .bottom {
-  opacity: 0;
-  transform: rotate(45deg);
-}
-#hamburger-trigger:checked + .hamburger .mid {
-  transform: rotate(45deg);
-  margin-top: -7px;
-}
-
-#hamburger-trigger:checked + .hamburger + .site-menu {
-  top: 0;
-  transform: scale(1);
+.navbar-default .navbar-toggle {
+    border-color: $text-white;
 }
 
 .pimg {
@@ -159,7 +93,7 @@ body, html {
 }
 
 .section-two {
-  height: 100vh;
+  height: 120vh;
   color: $ptext-color;
   font-family: $font-Sans;
 
@@ -210,7 +144,7 @@ body, html {
   p {
     margin: 0 10px;
     padding: 1em;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   a {
@@ -228,7 +162,6 @@ body, html {
 
 .section-three {
     background: #f6f6f6;
-    margin-top: 5em;
     height: 90vh;
 
 .history-page {
