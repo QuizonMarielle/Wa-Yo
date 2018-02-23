@@ -1,6 +1,6 @@
 //Fonts
 $ptext-color: #000009;
-$header-font: 'Permanent Marker', cursive;
+$header-font: 'Leckerli One', cursive;
 $font-Sans: 'Source Sans Pro', sans-serif;
 $font-Lobster: 'Lobster', cursive;
 $text-white: #FFFFFF;
@@ -8,6 +8,8 @@ $trigger-width: 25px;
 $trigger-border-weight: 3px;
 $trigger-color: #fff;
 $hr-color: #f41313;
+$logo-bg: #8B1015;
+$logo-font: 'Permanent Marker', serif;
 
 
 //Base
@@ -32,41 +34,56 @@ body, html {
 //Nav
 .navbar-default {
   background: $text-white;
+  height: 6.5625rem;
 }
 
-.navbar-default .navbar-brand {
-    color: $ptext-color;
+.logo {
+  background-image: url(../imgs/Logo-bg.png);
+
+  font-size: 2.5em;
+  height: 130px;
+  font-family: $logo-font;
+  margin: 0 2rem;
 }
 
-.navbar-brand {
-    padding: 1em;
-}
+// .navbar-default .navbar-nav>li>a.navbar-brand {
+//   color: $text-white;
+//   font-size: 2.5rem;
+//   color: $text-white;
+//   font-family: $logo-font;
+//   height: 8.125rem;
+//   margin-left: 1rem;
+//   margin-right: 1.25rem;
+// }
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+
 
 .navbar-toggle .icon-bar {
     background-color: black;
 }
 
-.navbar-brand {
-    font-size: 2.5rem;
-    padding: 1rem;
-    margin: 1rem;
-    color: $text-white;
-    font-family: $header-font;
-}
-
 .navbar .navbar-nav > li > a {
   color: $ptext-color;
-  line-height: 3rem;
-  padding-left: 3rem;
+  line-height: 4rem;
 }
 
+.navbar .navbar-nav > li > .logo {
+  color: $text-white;
+}
 .navbar-default .navbar-toggle {
     border-color: $text-white;
 }
 
 .pimg {
   position: relative;
-  opacity: 0.80;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,20 +97,26 @@ body, html {
   width: 100%;
   text-align: center;
   color: $text-white;
+  text-shadow: 0 8px #333;
+  font-style: italic;
   font-size: 4rem;
   letter-spacing: 8px;
   text-transform: uppercase;
   font-family: $header-font;
 }
 
-.pimg1 {
-  @extend .pimg;
-  background-image: url(../imgs/bg-header.jpg);
-  opacity: 0.90;
+#bottom-margin {
+  margin-bottom: 3rem;
 }
 
+.pimg1 {
+  @extend .pimg;
+  background-image: url(../imgs/bg-header3.jpg);
+}
+
+
+
 .section-two {
-  height: 120vh;
   color: $ptext-color;
   font-family: $font-Sans;
 
@@ -103,8 +126,11 @@ body, html {
 
   h1 {
     text-align: center;
-    font-family: $font-Lobster;
-    font-size: 4em;
+    text-shadow: 0 2px #333;
+    font-family: $logo-font;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
     margin-top: 5px;
     margin-bottom: 0;
   }
@@ -112,16 +138,16 @@ body, html {
   img {
     position: relative;
     bottom: 1rem;
-    width: 25em;
     margin: 0 auto;
     display: block;
+    width: 18%;
     border-radius: 100%;
-    background: $text-white;
+    background-color: $text-white;
   }
 
   hr {
     @extend .border-bottom;
-    margin-top: 2em;
+    margin-top: 1rem;
   }
 }
 
@@ -133,18 +159,20 @@ body, html {
   img {
     display: block;
     margin: 0 auto;
+    width: 3.75rem;
   }
 
   h3 {
     margin-top: 2em;
+    font-size: 1.25em;
     margin-bottom: 0;
     font-weight: bold;
   }
 
   p {
-    margin: 0 10px;
+    margin: 0 3.5rem;
     padding: 1em;
-    font-size: 1rem;
+    font-size: 14px;
   }
 
   a {
@@ -159,6 +187,7 @@ body, html {
   }
 }
 } // End Section Two
+
 
 .section-three {
     background: #f6f6f6;
@@ -227,150 +256,149 @@ p {
     }
 } // End Section Three
 
-.pimg2 {
-  @extend .pimg;
-  background-image: url(../imgs/bg-header2.jpg);
-  margin: 5em;
-  background-attachment: scroll;
-
-  .border {
-    color: $ptext-color;
-  }
-}
-
-.section-four {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-// Section Four Extends
-  .menu {
-    min-height: 100%;
-  }
-
-  .menu-opacity {
-    opacity:0; transition:opacity 300ms ease;
-  }
-
-// End Section Four Extends
-
-  .menu-one, .menu-two, .menu-three, .menu-four,
-  .menu-five, .menu-six, .menu-seven, .menu-eight, .menu-nine {
-    margin: 0 5em 5em 5em;
-    height: 100%;
-  }
-
-  .menu-one:hover {
-    background: url(../imgs/his2-final.jpg);
-    background-repeat: no-repeat;
-    margin-left: 5em;
-  }
-
-  .menu-one:hover > .menu-content {
-    @extend .menu-opacity;
-  }
-
-  .menu-two {
-    margin-top: 10em;
-  }
-
-  .menu-two:hover {
-    background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat;
-    margin-left: 5em;
-  }
-
-  .menu-two:hover > .menu-content {
-    @extend .menu-opacity;
-  }
-
-  .menu-three:hover {
-    background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat;
-    margin-left: 5em;
-
-  }
-
-  .menu-three:hover > .menu-content {
-    @extend .menu-opacity;
-  }
-
-  .menu-four:hover {
-    background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat;
-    margin-left: 5em;
-  }
-
-  .menu-four:hover > .menu-content {
-    @extend .menu-opacity;
-  }
-
-  .menu-five {
-    margin-top: 10em;
-  }
-
-  .menu-five:hover {
-    background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat;
-    margin-left: 5em;
-  }
-
-  .menu-five:hover > .menu-content {
-    @extend .menu-opacity;
-  }
-
-  .menu-six:hover {
-    background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat;
-    margin-left: 5em;
-  }
-
-  .menu-six:hover > .menu-content {
-    @extend .menu-opacity;
-  }
-
-  .menu-seven:hover {
-    background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat;
-    margin-left: 5em;
-  }
-
-  .menu-seven:hover > .menu-content {
-    @extend .menu-opacity;
-  }
-
-  .menu-eight {
-    margin-top: 10em;
-  }
-
-  .menu-eight:hover {
-    background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat;
-    margin-left: 5em;
-  }
-
-  .menu-eight:hover > .menu-content {
-    @extend .menu-opacity;
-  }
-
-  .menu-nine:hover {
-    background: url(../imgs/his1-final.jpg);
-    background-repeat: no-repeat;
-    margin-left: 5em;
-  }
-
-  .menu-nine:hover > .menu-content {
-    @extend .menu-opacity;
-  }
-}
-
-// Pimg 3
-  .pimg3 {
-  @extend .pimg;
-  background-image: url(../imgs/bg-header2.jpg);
-  margin: 5em;
-  background-attachment: scroll;
-
-  .border {
-    color: $ptext-color;
-  }
-}
+// .pimg2 {
+//   @extend .pimg;
+//   margin: 5em;
+//   background-attachment: scroll;
+//
+//   .border {
+//     color: $ptext-color;
+//   }
+// }
+//
+// .section-four {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//
+// // Section Four Extends
+//   .menu {
+//     min-height: 100%;
+//   }
+//
+//   .menu-opacity {
+//     opacity:0; transition:opacity 300ms ease;
+//   }
+//
+// // End Section Four Extends
+//
+//   .menu-one, .menu-two, .menu-three, .menu-four,
+//   .menu-five, .menu-six, .menu-seven, .menu-eight, .menu-nine {
+//     margin: 0 5em 5em 5em;
+//     height: 100%;
+//   }
+//
+//   .menu-one:hover {
+//     background: url(../imgs/his2-final.jpg);
+//     background-repeat: no-repeat;
+//     margin-left: 5em;
+//   }
+//
+//   .menu-one:hover > .menu-content {
+//     @extend .menu-opacity;
+//   }
+//
+//   .menu-two {
+//     margin-top: 10em;
+//   }
+//
+//   .menu-two:hover {
+//     background: url(../imgs/his1-final.jpg);
+//     background-repeat: no-repeat;
+//     margin-left: 5em;
+//   }
+//
+//   .menu-two:hover > .menu-content {
+//     @extend .menu-opacity;
+//   }
+//
+//   .menu-three:hover {
+//     background: url(../imgs/his1-final.jpg);
+//     background-repeat: no-repeat;
+//     margin-left: 5em;
+//
+//   }
+//
+//   .menu-three:hover > .menu-content {
+//     @extend .menu-opacity;
+//   }
+//
+//   .menu-four:hover {
+//     background: url(../imgs/his1-final.jpg);
+//     background-repeat: no-repeat;
+//     margin-left: 5em;
+//   }
+//
+//   .menu-four:hover > .menu-content {
+//     @extend .menu-opacity;
+//   }
+//
+//   .menu-five {
+//     margin-top: 10em;
+//   }
+//
+//   .menu-five:hover {
+//     background: url(../imgs/his1-final.jpg);
+//     background-repeat: no-repeat;
+//     margin-left: 5em;
+//   }
+//
+//   .menu-five:hover > .menu-content {
+//     @extend .menu-opacity;
+//   }
+//
+//   .menu-six:hover {
+//     background: url(../imgs/his1-final.jpg);
+//     background-repeat: no-repeat;
+//     margin-left: 5em;
+//   }
+//
+//   .menu-six:hover > .menu-content {
+//     @extend .menu-opacity;
+//   }
+//
+//   .menu-seven:hover {
+//     background: url(../imgs/his1-final.jpg);
+//     background-repeat: no-repeat;
+//     margin-left: 5em;
+//   }
+//
+//   .menu-seven:hover > .menu-content {
+//     @extend .menu-opacity;
+//   }
+//
+//   .menu-eight {
+//     margin-top: 10em;
+//   }
+//
+//   .menu-eight:hover {
+//     background: url(../imgs/his1-final.jpg);
+//     background-repeat: no-repeat;
+//     margin-left: 5em;
+//   }
+//
+//   .menu-eight:hover > .menu-content {
+//     @extend .menu-opacity;
+//   }
+//
+//   .menu-nine:hover {
+//     background: url(../imgs/his1-final.jpg);
+//     background-repeat: no-repeat;
+//     margin-left: 5em;
+//   }
+//
+//   .menu-nine:hover > .menu-content {
+//     @extend .menu-opacity;
+//   }
+// }
+//
+// // Pimg 3
+//   .pimg3 {
+//   @extend .pimg;
+//   background-image: url(../imgs/bg-header2.jpg);
+//   margin: 5em;
+//   background-attachment: scroll;
+//
+//   .border {
+//     color: $ptext-color;
+//   }
+// }
