@@ -5,13 +5,7 @@ body, html {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.8em;
-  color: #000009; }
-
-.border-bottom, .section-two .waffle-border hr, .section-two .b-container hr, .section-three hr {
-  width: 5%;
-  border-bottom: 5px solid #f41313;
-  border: 0;
-  border-top: 3px solid #f41313; }
+  color: #252525; }
 
 .navbar-default {
   background: #FFFFFF;
@@ -35,7 +29,7 @@ body, html {
   background-color: black; }
 
 .navbar .navbar-nav > li > a {
-  color: #000009;
+  color: #252525;
   line-height: 4rem; }
 
 .navbar .navbar-nav > li > .logo {
@@ -72,20 +66,38 @@ body, html {
   background-image: url(../imgs/bg-header3.jpg); }
 
 .section-two {
-  color: #000009;
-  font-family: "Source Sans Pro", sans-serif; }
+  color: #252525;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 0; }
   .section-two .waffle-border {
     position: relative;
     bottom: 5rem; }
     .section-two .waffle-border h1 {
+      line-height: 0.5;
       text-align: center;
       text-shadow: 0 2px #333;
-      font-family: "Permanent Marker", serif;
-      font-style: italic;
+      font-family: "Leckerli One", cursive;
       letter-spacing: 2px;
       font-size: 2.5rem;
-      margin-top: 5px;
+      margin-top: 1.5rem;
       margin-bottom: 0; }
+    .section-two .waffle-border .borders span {
+      display: inline-block;
+      position: relative; }
+    .section-two .waffle-border .borders span:before,
+    .section-two .waffle-border .borders span:after {
+      content: "";
+      position: absolute;
+      height: 10px;
+      border-bottom: 5px solid #8B1015;
+      top: 8px;
+      width: 10rem; }
+    .section-two .waffle-border .borders span:before {
+      right: 115%;
+      margin-right: 15px; }
+    .section-two .waffle-border .borders span:after {
+      left: 115%;
+      margin-left: 15px; }
     .section-two .waffle-border img {
       position: relative;
       bottom: 1rem;
@@ -94,78 +106,65 @@ body, html {
       width: 18%;
       border-radius: 100%;
       background-color: #FFFFFF; }
-    .section-two .waffle-border hr {
-      margin-top: 1rem; }
   .section-two .b-container {
+    margin: 3rem;
     display: flex;
     justify-content: center;
     text-align: center; }
     .section-two .b-container img {
       display: block;
       margin: 0 auto;
-      width: 3.75rem; }
+      width: 3.25rem; }
     .section-two .b-container h3 {
-      margin-top: 2em;
+      margin-top: 2rem;
       font-size: 1.25em;
       margin-bottom: 0;
       font-weight: bold; }
     .section-two .b-container p {
-      margin: 0 3.5rem;
+      width: 85%;
+      margin: 0 1.5rem;
       padding: 1em;
-      font-size: 14px; }
+      font-size: 1rem; }
     .section-two .b-container a {
       text-decoration: none;
-      background: #000009; }
-    .section-two .b-container hr {
-      margin-top: 1rem;
-      width: 3rem; }
+      background: #252525; }
 
 .section-three {
-  background: #f6f6f6;
-  height: 90vh; }
-  .section-three .history-page {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 2em;
-    position: relative;
-    top: 2em; }
-  .section-three .his-description {
-    align-self: center;
-    position: relative;
-    top: 4em;
-    left: 8em;
-    margin: 3em;
-    padding: 2em; }
-  .section-three h2 {
-    font-family: "Lobster", cursive;
-    font-size: 4em; }
-  .section-three hr {
-    width: 15%;
-    margin: 2rem 0; }
+  background-color: #df0024;
+  color: #FFFFFF; }
+  .section-three .product-yogurt {
+    float: right;
+    margin-top: 6.025em; }
+  .section-three .content {
+    margin-top: 6.025em;
+    margin-left: 2em; }
+  .section-three h1 {
+    margin-top: 14px; }
   .section-three p {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 1.2em; }
-  .section-three .btn-default {
-    background: #f41313;
+    width: 40%;
+    margin-top: 1rem;
+    font-size: 1rem; }
+  .section-three .btn {
+    margin-top: 1rem;
+    background-color: #252525;
     color: #FFFFFF;
-    font-family: "Source Sans Pro", sans-serif;
-    text-transform: uppercase;
-    border-radius: 2px;
-    margin-top: 2rem;
-    width: 25%;
-    padding: 8px; }
-  .section-three .his-image {
-    position: relative;
-    top: 5em;
-    right: 1em;
-    margin: 1em 0 0 10em; }
-  .section-three #stack {
-    left: 0px;
-    top: 0px;
-    z-index: -1; }
-  .section-three #stack-right {
-    position: absolute;
-    left: 10em;
-    top: 10em; }
+    border-color: #252525;
+    font-size: 16px; }
+
+.section-four {
+  background-image: url(../imgs/21.jpg);
+  background-repeat: no-repeat;
+  background-cover: cover; }
+
+.mapouter {
+  margin: 3rem;
+  overflow: hidden;
+  height: 325px;
+  width: 1260px; }
+
+.gmap_canvas {
+  background: none !important;
+  height: 325px;
+  width: 1260px; }
 
 /*# sourceMappingURL=main.css.map */

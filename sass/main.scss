@@ -1,5 +1,5 @@
 //Fonts
-$ptext-color: #000009;
+$ptext-color: #252525;
 $header-font: 'Leckerli One', cursive;
 $font-Sans: 'Source Sans Pro', sans-serif;
 $font-Lobster: 'Lobster', cursive;
@@ -7,7 +7,7 @@ $text-white: #FFFFFF;
 $trigger-width: 25px;
 $trigger-border-weight: 3px;
 $trigger-color: #fff;
-$hr-color: #f41313;
+$sthree-bg: #df0024;
 $logo-bg: #8B1015;
 $logo-font: 'Permanent Marker', serif;
 
@@ -21,14 +21,6 @@ body, html {
   font-weight: 400;
   line-height: 1.8em;
   color: $ptext-color;
-}
-
-//Border-bottom
-.border-bottom {
-  width: 5%;
-  border-bottom: 5px solid $hr-color;
-  border: 0;
-  border-top: 3px solid $hr-color;
 }
 
 //Nav
@@ -114,26 +106,50 @@ body, html {
   background-image: url(../imgs/bg-header3.jpg);
 }
 
-
-
 .section-two {
   color: $ptext-color;
   font-family: $font-Sans;
+  margin-bottom: 0;
 
 .waffle-border {
   position: relative;
   bottom: 5rem;
 
   h1 {
+    line-height: 0.5;
     text-align: center;
     text-shadow: 0 2px #333;
-    font-family: $logo-font;
-    font-style: italic;
+    font-family: $header-font;
     letter-spacing: 2px;
     font-size: 2.5rem;
-    margin-top: 5px;
+    margin-top: 1.5rem;
     margin-bottom: 0;
   }
+
+.borders span {
+  display: inline-block;
+  position: relative;
+}
+
+.borders span:before,
+.borders span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-bottom: 5px solid $logo-bg;
+  top: 8px;
+  width: 10rem;
+}
+
+.borders span:before {
+  right: 115%;
+  margin-right: 15px;
+}
+.borders span:after {
+  left: 115%;
+  margin-left: 15px;
+}
+
 
   img {
     position: relative;
@@ -144,14 +160,10 @@ body, html {
     border-radius: 100%;
     background-color: $text-white;
   }
-
-  hr {
-    @extend .border-bottom;
-    margin-top: 1rem;
-  }
 }
 
 .b-container {
+  margin: 3rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -159,102 +171,150 @@ body, html {
   img {
     display: block;
     margin: 0 auto;
-    width: 3.75rem;
+    width: 3.25rem;
   }
 
+
   h3 {
-    margin-top: 2em;
+    margin-top: 2rem;
     font-size: 1.25em;
     margin-bottom: 0;
     font-weight: bold;
   }
 
   p {
-    margin: 0 3.5rem;
+    width: 85%;
+    margin: 0 1.5rem;
     padding: 1em;
-    font-size: 14px;
+    font-size: 1rem;
   }
 
   a {
     text-decoration: none;
     background: $ptext-color;
   }
-
-  hr {
-    @extend .border-bottom;
-    margin-top: 1rem;
-    width: 3rem;
-  }
 }
 } // End Section Two
 
 
 .section-three {
-    background: #f6f6f6;
-    height: 90vh;
-
-.history-page {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 2em;
-    position: relative;
-    top: 2em;
-}
-
-.his-description {
-  align-self: center;
-  position: relative;
-  top: 4em;
-  left: 8em;
-  margin: 3em;
-  padding: 2em;
-}
-
-h2 {
-  font-family: $font-Lobster;
-  font-size: 4em;
-}
-
-hr {
-  @extend .border-bottom;
-  width: 15%;
-  margin: 2rem 0;
-}
-
-p {
-  font-family: $font-Sans;
-  font-size: 1.2em;
-}
-
-.btn-default {
-  background: $hr-color;
+  background-color: $sthree-bg;
   color: $text-white;
-  font-family: $font-Sans;
-  text-transform: uppercase;
-  border-radius: 2px;
-  margin-top: 2rem;
-  width: 25%;
-  padding: 8px;
+
+  .product-yogurt {
+    float: right;
+    margin-top: 6.025em;
+  }
+
+  .content {
+    margin-top: 6.025em;
+    margin-left: 2em;
+  }
+
+  h1 {
+    margin-top: 14px;
+  }
+
+  p {
+    width: 40%;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .btn {
+    margin-top: 1rem;
+    background-color: $ptext-color;
+    color: $text-white;
+    border-color: #252525;
+    font-size: 16px;
+  }
 }
 
-.his-image {
-    position: relative;
-    top: 5em;
-    right: 1em;
-    margin: 1em 0 0 10em;
+//Map
+.section-four {
+  background-image: url(../imgs/21.jpg);
+  background-repeat: no-repeat;
+  background-cover: cover;
 }
-    #stack {
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    }
+.mapouter {
+  margin: 3rem;
+  overflow:hidden;
+  height:325px;
+  width:1260px;
+}
 
-    #stack-right {
-    position: absolute;
-    left: 10em;
-    top: 10em;
-    }
-} // End Section Three
+.gmap_canvas {
+  background:none !important;
+  height:325px;
+  width:1260px;
+}
+
+// .section-three {
+//     background: #f6f6f6;
+//     height: 90vh;
+//
+// .history-page {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     margin-top: 2em;
+//     position: relative;
+//     top: 2em;
+// }
+//
+// .his-description {
+//   align-self: center;
+//   position: relative;
+//   top: 4em;
+//   left: 8em;
+//   margin: 3em;
+//   padding: 2em;
+// }
+//
+// h2 {
+//   font-family: $font-Lobster;
+//   font-size: 4em;
+// }
+//
+// hr {
+//   @extend .border-bottom;
+//   width: 15%;
+//   margin: 2rem 0;
+// }
+//
+// p {
+//   font-family: $font-Sans;
+//   font-size: 1.2em;
+// }
+//
+// .btn-default {
+//   background: $hr-color;
+//   color: $text-white;
+//   font-family: $font-Sans;
+//   text-transform: uppercase;
+//   border-radius: 2px;
+//   margin-top: 2rem;
+//   width: 25%;
+//   padding: 8px;
+// }
+//
+// .his-image {
+//     position: relative;
+//     top: 5em;
+//     right: 1em;
+//     margin: 1em 0 0 10em;
+// }
+//     #stack {
+//     left: 0px;
+//     top: 0px;
+//     z-index: -1;
+//     }
+//
+//     #stack-right {
+//     position: absolute;
+//     left: 10em;
+//     top: 10em;
+//     }
+// } // End Section Three
 
 // .pimg2 {
 //   @extend .pimg;
