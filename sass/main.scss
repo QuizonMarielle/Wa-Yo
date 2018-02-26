@@ -1,14 +1,17 @@
 //Fonts
 $ptext-color: #252525;
 $header-font: 'Leckerli One', cursive;
+$font-Helvetica: 'Helvetica', serif;
 $font-Sans: 'Source Sans Pro', sans-serif;
 $font-Lobster: 'Lobster', cursive;
+$font-Playfair: 'Playfair Display', serif;
 $text-white: #FFFFFF;
 $trigger-width: 25px;
 $trigger-border-weight: 3px;
 $trigger-color: #fff;
 $sthree-bg: #df0024;
 $logo-bg: #8B1015;
+$second-fcolor: #696969;
 $logo-font: 'Permanent Marker', serif;
 
 
@@ -21,6 +24,9 @@ body, html {
   font-weight: 400;
   line-height: 1.8em;
   color: $ptext-color;
+  background-image: url(../imgs/21.jpg);
+  background-repeat: no-repeat;
+  background-cover: cover;
 }
 
 //Nav
@@ -89,12 +95,10 @@ body, html {
   width: 100%;
   text-align: center;
   color: $text-white;
-  text-shadow: 0 8px #333;
   font-style: italic;
-  font-size: 4rem;
-  letter-spacing: 8px;
+  font-size: 4.3rem;
   text-transform: uppercase;
-  font-family: $header-font;
+  font-family: $font-Playfair;
 }
 
 #bottom-margin {
@@ -103,7 +107,7 @@ body, html {
 
 .pimg1 {
   @extend .pimg;
-  background-image: url(../imgs/bg-header3.jpg);
+  background-image: url(../imgs/bg-header5.jpg);
 }
 
 .section-two {
@@ -118,10 +122,10 @@ body, html {
   h1 {
     line-height: 0.5;
     text-align: center;
-    text-shadow: 0 2px #333;
-    font-family: $header-font;
-    letter-spacing: 2px;
+    font-family: $font-Playfair;
     font-size: 2.5rem;
+    text-shadow: 0 1px #333;
+    font-weight: bold;
     margin-top: 1.5rem;
     margin-bottom: 0;
   }
@@ -158,7 +162,7 @@ body, html {
     display: block;
     width: 18%;
     border-radius: 100%;
-    background-color: $text-white;
+    background-color: #f4f4f4;
   }
 }
 
@@ -177,16 +181,19 @@ body, html {
 
   h3 {
     margin-top: 2rem;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     margin-bottom: 0;
     font-weight: bold;
+    font-family: $font-Playfair;
   }
 
   p {
     width: 85%;
-    margin: 0 1.5rem;
+    margin: 0 1.6rem;
     padding: 1em;
     font-size: 1rem;
+    color: $second-fcolor;
+    font-family: $font-Sans;
   }
 
   a {
@@ -200,6 +207,7 @@ body, html {
 .section-three {
   background-color: $sthree-bg;
   color: $text-white;
+  margin-top: 4rem;
 
   .product-yogurt {
     float: right;
@@ -207,12 +215,18 @@ body, html {
   }
 
   .content {
-    margin-top: 6.025em;
-    margin-left: 2em;
+    margin-top: 5.5em;
+    margin-left: 4em;
   }
 
   h1 {
     margin-top: 14px;
+    font-size: 2.125rem;
+    font-family: $font-Playfair;
+  }
+
+  h4 {
+    font-size: 1.125rem;
   }
 
   p {
@@ -232,12 +246,9 @@ body, html {
 
 //Map
 .section-four {
-  background-image: url(../imgs/21.jpg);
-  background-repeat: no-repeat;
-  background-cover: cover;
+  margin-top: 5.5rem;
 }
 .mapouter {
-  margin: 3rem;
   overflow:hidden;
   height:325px;
   width:1260px;
@@ -248,6 +259,18 @@ body, html {
   height:325px;
   width:1260px;
 }
+
+//Section menu-five
+.section-five {
+  background-color: $ptext-color;
+  margin-top: 5.5rem;
+  padding: 5rem;
+}
+
+.contact-content, .opening-section {
+  color: $text-white;
+}
+
 
 // .section-three {
 //     background: #f6f6f6;
