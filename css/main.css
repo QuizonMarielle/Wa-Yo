@@ -6,9 +6,7 @@ body, html {
   font-weight: 400;
   line-height: 1.8em;
   color: #252525;
-  background-image: url(../imgs/21.jpg);
-  background-repeat: no-repeat;
-  background-cover: cover; }
+  background-color: #FFFFFF; }
 
 .navbar-default {
   background: #FFFFFF;
@@ -142,13 +140,14 @@ body, html {
     margin-top: 6.025em; }
   .section-three .content {
     margin-top: 5.5em;
-    margin-left: 4em; }
+    margin-left: 4em;
+    text-align: left; }
   .section-three h1 {
     margin-top: 14px;
     font-size: 2.125rem;
     font-family: "Playfair Display", serif; }
   .section-three h4 {
-    font-size: 1.125rem; }
+    font-size: 1rem; }
   .section-three p {
     width: 40%;
     margin-top: 1rem;
@@ -174,7 +173,7 @@ body, html {
   width: 1260px; }
 
 .section-five {
-  background-color: #252525;
+  background-color: #000000;
   margin-top: 5.5rem;
   padding: 4rem; }
 
@@ -211,7 +210,7 @@ body, html {
   .opening-section .hours ul:last-child {
     font-weight: 100; }
   .opening-section .hours ul li {
-    padding-right: 4rem;
+    padding-right: 6rem;
     padding-bottom: 8px; }
 
 .clearfix:after {

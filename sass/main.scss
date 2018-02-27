@@ -1,113 +1,4 @@
-//Fonts
-$ptext-color: #252525;
-$header-font: 'Leckerli One', cursive;
-$font-Helvetica: 'Helvetica', serif;
-$font-Sans: 'Source Sans Pro', sans-serif;
-$font-Lobster: 'Lobster', cursive;
-$font-Playfair: 'Playfair Display', serif;
-$text-white: #FFFFFF;
-$trigger-width: 25px;
-$trigger-border-weight: 3px;
-$trigger-color: #fff;
-$sthree-bg: #df0024;
-$logo-bg: #8B1015;
-$second-fcolor: #696969;
-$logo-font: 'Permanent Marker', serif;
-
-
-//Base
-body, html {
-  height: 100%;
-  margin: 0;
-  font-size: 16px;
-  font-family: $font-Sans;
-  font-weight: 400;
-  line-height: 1.8em;
-  color: $ptext-color;
-  background-image: url(../imgs/21.jpg);
-  background-repeat: no-repeat;
-  background-cover: cover;
-}
-
-//Nav
-.navbar-default {
-  background: $text-white;
-  height: 6.5625rem;
-}
-
-.logo {
-  background-image: url(../imgs/Logo-bg.png);
-  font-size: 2.5em;
-  height: 130px;
-  font-family: $logo-font;
-  margin: 0 2rem;
-}
-
-// .navbar-default .navbar-nav>li>a.navbar-brand {
-//   color: $text-white;
-//   font-size: 2.5rem;
-//   color: $text-white;
-//   font-family: $logo-font;
-//   height: 8.125rem;
-//   margin-left: 1rem;
-//   margin-right: 1.25rem;
-// }
-
-.navbar-nav {
-    width: 100%;
-    text-align: center;
-    > li {
-      float: none;
-      display: inline-block;
-    }
-  }
-
-
-.navbar-toggle .icon-bar {
-    background-color: black;
-}
-
-.navbar .navbar-nav > li > a {
-  color: $ptext-color;
-  line-height: 4rem;
-}
-
-.navbar .navbar-nav > li > .logo {
-  color: $text-white;
-}
-.navbar-default .navbar-toggle {
-    border-color: $text-white;
-}
-
-.pimg {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100%;
-}
-
-.ptext {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: $text-white;
-  font-style: italic;
-  font-size: 4.3rem;
-  text-transform: uppercase;
-  font-family: $font-Playfair;
-}
-
-#bottom-margin {
-  margin-bottom: 3rem;
-}
-
-.pimg1 {
-  @extend .pimg;
-  background-image: url(../imgs/bg-header5.jpg);
-}
+@import "base.scss";
 
 .section-two {
   color: $ptext-color;
@@ -216,6 +107,10 @@ body, html {
   .content {
     margin-top: 5.5em;
     margin-left: 4em;
+    text-align: left;
+  }
+
+  .section-three:after {
   }
 
   h1 {
@@ -225,7 +120,7 @@ body, html {
   }
 
   h4 {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   p {
@@ -261,7 +156,7 @@ body, html {
 
 //Section menu-five
 .section-five {
-  background-color: $ptext-color;
+  background-color: #000000;
   margin-top: 5.5rem;
   padding: 4rem;
 }
@@ -314,7 +209,7 @@ body, html {
 }
 
 .hours ul li {
-  padding-right: 4rem;
+  padding-right: 6rem;
   padding-bottom: 8px;
 }
 
