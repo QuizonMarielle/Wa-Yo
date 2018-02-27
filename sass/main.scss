@@ -37,7 +37,6 @@ body, html {
 
 .logo {
   background-image: url(../imgs/Logo-bg.png);
-
   font-size: 2.5em;
   height: 130px;
   font-family: $logo-font;
@@ -140,7 +139,7 @@ body, html {
   content: "";
   position: absolute;
   height: 10px;
-  border-bottom: 5px solid $logo-bg;
+  border-bottom: 5px solid #eea804;
   top: 8px;
   width: 10rem;
 }
@@ -264,12 +263,89 @@ body, html {
 .section-five {
   background-color: $ptext-color;
   margin-top: 5.5rem;
-  padding: 5rem;
+  padding: 4rem;
 }
 
-.contact-content, .opening-section {
+.contact-section {
   color: $text-white;
+  margin-left: 2rem;
 }
+
+.contact-content {
+  float: left;
+  width: 20%;
+
+  .email {
+    padding-top: 2.125rem;
+  }
+
+  .fa-envelope, .fa-phone {
+    margin: 0 3px 0 3px;
+    font-size: 1.25rem;
+  }
+}
+
+.opening-section {
+  position: relative;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hours {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hours ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hours ul:first-child {
+  font-weight: 700;
+}
+
+.hours ul:last-child {
+  font-weight: 100;
+}
+
+.hours ul li {
+  padding-right: 4rem;
+  padding-bottom: 8px;
+}
+
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.contact-address {
+  padding-top: 1.2rem;
+}
+
+.copyright {
+  float: right;
+  position: relative;
+  left: 10%;
+}
+
+.content {
+  text-align: center
+}
+
+.fa-facebook-f, .fa-instagram, .fa-twitter{
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+
+
+
+
 
 
 // .section-three {

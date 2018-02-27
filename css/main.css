@@ -90,7 +90,7 @@ body, html {
       content: "";
       position: absolute;
       height: 10px;
-      border-bottom: 5px solid #8B1015;
+      border-bottom: 5px solid #eea804;
       top: 8px;
       width: 10rem; }
     .section-two .waffle-border .borders span:before {
@@ -176,9 +176,60 @@ body, html {
 .section-five {
   background-color: #252525;
   margin-top: 5.5rem;
-  padding: 5rem; }
+  padding: 4rem; }
 
-.contact-content, .opening-section {
-  color: #FFFFFF; }
+.contact-section {
+  color: #FFFFFF;
+  margin-left: 2rem; }
+
+.contact-content {
+  float: left;
+  width: 20%; }
+  .contact-content .email {
+    padding-top: 2.125rem; }
+  .contact-content .fa-envelope, .contact-content .fa-phone {
+    margin: 0 3px 0 3px;
+    font-size: 1.25rem; }
+
+.opening-section {
+  position: relative;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .opening-section .hours {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; }
+  .opening-section .hours ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .opening-section .hours ul:first-child {
+    font-weight: 700; }
+  .opening-section .hours ul:last-child {
+    font-weight: 100; }
+  .opening-section .hours ul li {
+    padding-right: 4rem;
+    padding-bottom: 8px; }
+
+.clearfix:after {
+  clear: both; }
+
+.contact-address {
+  padding-top: 1.2rem; }
+
+.copyright {
+  float: right;
+  position: relative;
+  left: 10%; }
+
+.content {
+  text-align: center; }
+
+.fa-facebook-f, .fa-instagram, .fa-twitter {
+  margin: 1rem;
+  font-size: 1.25rem; }
 
 /*# sourceMappingURL=main.css.map */
