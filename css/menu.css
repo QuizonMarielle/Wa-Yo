@@ -1,0 +1,171 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #252525;
+  background-color: #FFFFFF; }
+
+.navbar-default {
+  background: #FFFFFF;
+  height: 6.5625rem; }
+
+.logo {
+  background-image: url(../imgs/Logo-bg.png);
+  font-size: 2.5em;
+  height: 130px;
+  font-family: "Permanent Marker", serif;
+  margin: 0 2rem; }
+
+.navbar-nav {
+  width: 100%;
+  text-align: center; }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block; }
+
+.navbar-toggle .icon-bar {
+  background-color: black; }
+
+.navbar .navbar-nav > li > a {
+  color: #252525;
+  line-height: 4rem; }
+
+.navbar .navbar-nav > li > .logo {
+  color: #FFFFFF; }
+
+.navbar-default .navbar-toggle {
+  border-color: #FFFFFF; }
+
+.pimg, .pimg1 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%; }
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-style: italic;
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif; }
+
+#bottom-margin {
+  margin-bottom: 3rem; }
+
+.pimg1 {
+  background-image: url(../imgs/bg-header5.jpg); }
+
+.borders span {
+  display: inline-block;
+  position: relative; }
+
+.borders span:before,
+.borders span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-bottom: 5px solid #eea804;
+  top: 8px;
+  width: 10rem; }
+
+.borders span:before {
+  right: 115%;
+  margin-right: 15px; }
+
+.borders span:after {
+  left: 115%;
+  margin-left: 15px; }
+
+.menu-headers, .section-four h1, .section-five h1 {
+  text-align: center;
+  line-height: 0.8;
+  margin: 5rem 0;
+  font-family: "Playfair Display", serif; }
+
+.black-border {
+  position: relative;
+  padding-bottom: 5px; }
+
+.black-border:after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #333;
+  width: 5rem;
+  bottom: -5px;
+  left: 1px; }
+
+.pimg1 {
+  background-image: url(../imgs/menu-header.jpg); }
+
+.section-four .menu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+.section-four .menu {
+  min-height: 100%; }
+.section-four .menu-one, .section-four .menu-two, .section-four .menu-three, .section-four .menu-four,
+.section-four .menu-five, .section-four .menu-six {
+  height: 100%; }
+.section-four .menu-one, .section-four .menu-four {
+  margin-left: 5rem; }
+.section-four .menu-two, .section-four .menu-five {
+  margin: 5em 4rem 0 4rem;
+  padding-top: 5em; }
+.section-four .menu-three, .section-four .menu-six {
+  margin: 0 4rem 0 4rem; }
+.section-four .menu-one:hover {
+  background: url(../imgs/his2-final.jpg);
+  background-repeat: no-repeat;
+  margin-left: 5em; }
+.section-four .menu-show:hover > .menu-content {
+  opacity: 0;
+  transition: opacity 400ms ease; }
+.section-four .menu-show {
+  width: 70%; }
+.section-four .menu-two:hover {
+  background: url(../imgs/his1-final.jpg);
+  background-repeat: no-repeat;
+  margin-left: 5em; }
+.section-four .menu-three:hover {
+  background: url(../imgs/his1-final.jpg);
+  background-repeat: no-repeat;
+  margin-left: 5em; }
+.section-four .menu-four:hover {
+  background: url(../imgs/his1-final.jpg);
+  background-repeat: no-repeat;
+  margin-left: 5em; }
+.section-four .menu-five:hover {
+  background: url(../imgs/his1-final.jpg);
+  background-repeat: no-repeat;
+  margin-left: 5em; }
+.section-four .menu-six:hover {
+  background: url(../imgs/his1-final.jpg);
+  background-repeat: no-repeat;
+  margin-left: 5em; }
+.section-four .menu-seven:hover {
+  background: url(../imgs/his1-final.jpg);
+  background-repeat: no-repeat;
+  margin-left: 5em; }
+.section-four .menu-eight:hover {
+  background: url(../imgs/his1-final.jpg);
+  background-repeat: no-repeat;
+  margin-left: 5em; }
+.section-four .menu-nine:hover {
+  background: url(../imgs/his1-final.jpg);
+  background-repeat: no-repeat;
+  margin-left: 5em; }
+
+.section-five {
+  padding: 2em; }
+  .section-five .drinks-content {
+    margin: 6.68rem; }
+
+/*# sourceMappingURL=menu.css.map */

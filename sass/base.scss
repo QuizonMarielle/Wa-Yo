@@ -1,0 +1,148 @@
+//Fonts
+$ptext-color: #252525;
+$header-font: 'Leckerli One', cursive;
+$font-Helvetica: 'Helvetica', serif;
+$font-Sans: 'Source Sans Pro', sans-serif;
+$font-Lobster: 'Lobster', cursive;
+$font-Playfair: 'Playfair Display', serif;
+$text-white: #FFFFFF;
+$trigger-width: 25px;
+$trigger-border-weight: 3px;
+$trigger-color: #fff;
+$sthree-bg: #df0024;
+$logo-bg: #8B1015;
+$second-fcolor: #696969;
+$logo-font: 'Permanent Marker', serif;
+
+//Base
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: $font-Sans;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: $ptext-color;
+  background-color: $text-white;
+}
+
+//Nav
+.navbar-default {
+  background: $text-white;
+  height: 6.5625rem;
+}
+
+.logo {
+  background-image: url(../imgs/Logo-bg.png);
+  font-size: 2.5em;
+  height: 130px;
+  font-family: $logo-font;
+  margin: 0 2rem;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+
+
+.navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar .navbar-nav > li > a {
+  color: $ptext-color;
+  line-height: 4rem;
+}
+
+.navbar .navbar-nav > li > .logo {
+  color: $text-white;
+}
+.navbar-default .navbar-toggle {
+    border-color: $text-white;
+}
+
+.pimg {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: $text-white;
+  font-style: italic;
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  font-family: $font-Playfair;
+}
+
+.bg-border {
+}
+
+#bottom-margin {
+  margin-bottom: 3rem;
+}
+
+.pimg1 {
+  @extend .pimg;
+  background-image: url(../imgs/bg-header5.jpg);
+}
+
+//header borders left and right
+.borders span {
+  display: inline-block;
+  position: relative;
+}
+
+.borders span:before,
+.borders span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-bottom: 5px solid #eea804;
+  top: 8px;
+  width: 10rem;
+}
+
+.borders span:before {
+  right: 115%;
+  margin-right: 15px;
+}
+.borders span:after {
+  left: 115%;
+  margin-left: 15px;
+}
+
+//menu-headers
+.menu-headers {
+  text-align: center;
+  line-height: 0.8;
+  margin: 5rem 0;
+  font-family: $font-Playfair;
+}
+
+// black-border bottom
+.black-border {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.black-border:after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #333;
+  width: 5rem;
+  bottom: -5px;
+  left: 1px;
+}

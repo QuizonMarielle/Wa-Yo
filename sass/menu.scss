@@ -1,0 +1,120 @@
+@import "base.scss";
+
+.pimg1 {
+  background-image: url(../imgs/menu-header.jpg);
+}
+
+.section-four {
+
+    h1 {
+      @extend .menu-headers;
+    }
+
+  .menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+// Section Four Extends
+  .menu {
+    min-height: 100%;
+  }
+
+// End Section Four Extends
+
+  .menu-one, .menu-two, .menu-three, .menu-four,
+  .menu-five, .menu-six {
+    height: 100%;
+  }
+
+  .menu-one, .menu-four {
+    margin-left: 5rem;
+  }
+
+  .menu-two, .menu-five {
+    margin: 5em 4rem 0 4rem;
+    padding-top: 5em;
+  }
+
+  .menu-three, .menu-six {
+    margin: 0 4rem 0 4rem;
+  }
+
+  .menu-one:hover {
+    background: url(../imgs/his2-final.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5em;
+  }
+
+  .menu-show:hover > .menu-content {
+    opacity:0; transition:opacity 400ms ease;
+  }
+
+  .menu-show {
+    width: 70%;
+  }
+
+  .menu-two:hover {
+    background: url(../imgs/his1-final.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5em;
+  }
+
+
+  .menu-three:hover {
+    background: url(../imgs/his1-final.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5em;
+  }
+
+  .menu-four:hover {
+    background: url(../imgs/his1-final.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5em;
+  }
+
+  .menu-five:hover {
+    background: url(../imgs/his1-final.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5em;
+  }
+
+  .menu-six:hover {
+    background: url(../imgs/his1-final.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5em;
+  }
+
+  .menu-seven:hover {
+    background: url(../imgs/his1-final.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5em;
+  }
+
+  .menu-eight:hover {
+    background: url(../imgs/his1-final.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5em;
+  }
+
+  .menu-nine:hover {
+    background: url(../imgs/his1-final.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5em;
+  }
+}
+
+//Section Five
+.section-five {
+  padding: 2em;
+
+  h1 {
+    @extend .menu-headers;
+  }
+
+  .drinks-content {
+    margin: 6.68rem;
+  }
+
+
+}
