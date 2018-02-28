@@ -64,6 +64,45 @@ body, html {
 .pimg1 {
   background-image: url(../imgs/bg-header5.jpg); }
 
+.borders span {
+  display: inline-block;
+  position: relative; }
+
+.borders span:before,
+.borders span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-bottom: 5px solid #eea804;
+  top: 8px;
+  width: 10rem; }
+
+.borders span:before {
+  right: 115%;
+  margin-right: 15px; }
+
+.borders span:after {
+  left: 115%;
+  margin-left: 15px; }
+
+.menu-headers {
+  text-align: center;
+  line-height: 0.8;
+  margin: 5rem 0;
+  font-family: "Playfair Display", serif; }
+
+.black-border {
+  position: relative;
+  padding-bottom: 5px; }
+
+.black-border:after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #333;
+  width: 5rem;
+  bottom: -5px;
+  left: 1px; }
+
 .section-two {
   color: #252525;
   font-family: "Source Sans Pro", sans-serif;
@@ -80,23 +119,6 @@ body, html {
       font-weight: bold;
       margin-top: 1.5rem;
       margin-bottom: 0; }
-    .section-two .waffle-border .borders span {
-      display: inline-block;
-      position: relative; }
-    .section-two .waffle-border .borders span:before,
-    .section-two .waffle-border .borders span:after {
-      content: "";
-      position: absolute;
-      height: 10px;
-      border-bottom: 5px solid #eea804;
-      top: 8px;
-      width: 10rem; }
-    .section-two .waffle-border .borders span:before {
-      right: 115%;
-      margin-right: 15px; }
-    .section-two .waffle-border .borders span:after {
-      left: 115%;
-      margin-left: 15px; }
     .section-two .waffle-border img {
       position: relative;
       bottom: 1rem;
@@ -172,7 +194,7 @@ body, html {
   height: 325px;
   width: 1260px; }
 
-.section-five {
+.contact-page {
   background-color: #000000;
   margin-top: 5.5rem;
   padding: 4rem; }
@@ -230,5 +252,11 @@ body, html {
 .fa-facebook-f, .fa-instagram, .fa-twitter {
   margin: 1rem;
   font-size: 1.25rem; }
+
+.menu-headers {
+  text-align: center;
+  line-height: 0.8;
+  margin: 5rem 0;
+  font-family: "Playfair Display", serif; }
 
 /*# sourceMappingURL=main.css.map */
