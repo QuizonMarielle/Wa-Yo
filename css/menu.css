@@ -100,7 +100,7 @@ body, html {
   position: absolute;
   border-bottom: 3px solid #333;
   width: 5rem;
-  bottom: -5px;
+  bottom: 0;
   left: 1px; }
 
 .pimg1 {
@@ -165,7 +165,60 @@ body, html {
 
 .section-five {
   padding: 2em; }
+  .section-five .drinks-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .section-five .drinks-content {
-    margin: 6.68rem; }
+    min-width: 600px; }
+  .section-five .item-drinks {
+    margin-top: 1rem;
+    display: table;
+    justify-content: space-between; }
+  .section-five .item-drinks ul {
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    list-style: none; }
+  .section-five .item-drinks ul:first-child {
+    font-weight: 700; }
+  .section-five .item-drinks ul:last-child {
+    font-weight: 100;
+    width: 10%;
+    white-space: nowrap; }
+  .section-five .item-drinks ul li {
+    padding-bottom: 8px;
+    position: relative; }
+  .section-five .prices1 {
+    position: absolute;
+    top: 12.5px;
+    line-height: 1;
+    font-size: 18px; }
+  .section-five .borders {
+    text-align: center; }
+  .section-five .borderlines span {
+    display: inline-block;
+    position: relative; }
+  .section-five .borderlines:after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    border-bottom: 5px solid #333;
+    top: 8px;
+    width: 10rem;
+    right: 5%;
+    bottom: 5px;
+    margin-left: 15px; }
+  .section-five .header-drinks {
+    position: relative; }
+  .section-five .header-drinks:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background: #333;
+    width: 5rem;
+    bottom: -10px;
+    left: 0; }
 
 /*# sourceMappingURL=menu.css.map */
