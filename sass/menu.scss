@@ -1,5 +1,9 @@
 @import "base.scss";
 
+body {
+  color: $text-white;
+}
+
 .pimg1 {
   background-image: url(../imgs/menu-header.jpg);
 }
@@ -106,85 +110,65 @@
 
 //Section Five
 .section-five {
-  padding: 2em;
-
+  margin: 0 2rem;
+  padding: 2rem;
 
   h1 {
     @extend .menu-headers;
   }
 
-    .drinks-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.drinks-content{min-width: 600px}
+  .drinks-section {
+    margin: 2em auto;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
-  .item-drinks {
-    margin-top: 1rem;
-    display: table;
-    justify-content: space-between;
   }
 
-  .item-drinks ul {
-    margin: 0;
-    padding: 0;
-    display: table-cell;
-    list-style: none;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+  li {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5%;
+      padding-bottom: 1rem;
+    }
+
+
+  .line {
+      height: 3px;
+      background: $text-white;
+      /* vertically center the line */
+      margin: auto 0;
+    }
+
+  .prices {
+    line-height: 1.25;
   }
 
-  .item-drinks ul:first-child {
-    font-weight: 700;
+    div:first-of-type ul:first-of-type:before {
+      content: '';
+      position: relative;
+      top: 0em;
+      width: 20%;
+      display: block;
+      background: $text-white;
+      height: 2px;
+      margin-bottom: 1.25rem;
   }
 
-  .item-drinks ul:last-child {
-    font-weight: 100;width: 10%;white-space: nowrap;
+  h4 {
+    margin-bottom: 8px;
   }
 
-  .item-drinks ul li {
-    padding-bottom: 8px;position: relative;
-}
 
-.prices1 {
-	  position: absolute;
-    top: 12.5px;
-	  line-height: 1;
-    font-size: 18px;
-}
-  .borders  {
-    text-align: center
-  }
-
-.borderlines span {
-  display: inline-block;
-  position: relative;
-}
-
-.borderlines:after {
-  content: "";
-  position: absolute;
-  height: 10px;
-  border-bottom: 5px solid #333;
-  top: 8px;
-  width: 10rem;
-  right: 5%;
-  bottom: 5px;
-  margin-left: 15px;
-}
-
-.header-drinks {
-  position: relative;
-}
-
-.header-drinks:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  background: #333;
-  width: 5rem;
-  bottom: -10px;
-  left: 0;
-}
+// ul:first-of-type li:first-of-type {
+//     width: 100%;
+//     margin: 0 auto;
+// }
 
 }

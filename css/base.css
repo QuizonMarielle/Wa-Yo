@@ -6,35 +6,30 @@ body, html {
   font-weight: 400;
   line-height: 1.8em;
   color: #252525;
-  background-color: #FFFFFF; }
+  background-image: url(../imgs/bg-wallpaper.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%; }
 
-.navbar-default {
-  background: #FFFFFF;
-  height: 6.5625rem; }
+.navbar-transparent {
+  height: 6.5625rem;
+  padding: 2.25rem; }
 
 .logo {
-  background-image: url(../imgs/Logo-bg.png);
-  font-size: 2.5em;
-  height: 130px;
+  color: #FFFFFF;
+  font-size: 2.5rem;
   font-family: "Permanent Marker", serif;
-  margin: 0 2rem; }
-
-.navbar-nav {
-  width: 100%;
-  text-align: center; }
-  .navbar-nav > li {
-    float: none;
-    display: inline-block; }
+  text-shadow: 0 1px #333; }
 
 .navbar-toggle .icon-bar {
-  background-color: black; }
+  background-color: #252525; }
 
 .navbar .navbar-nav > li > a {
-  color: #252525;
-  line-height: 4rem; }
-
-.navbar .navbar-nav > li > .logo {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding-right: 1.25rem;
+  line-height: -1;
+  font-weight: bold; }
 
 .navbar-default .navbar-toggle {
   border-color: #FFFFFF; }
@@ -102,5 +97,63 @@ body, html {
   width: 5rem;
   bottom: 0;
   left: 1px; }
+
+.contact-page {
+  margin-top: 2rem;
+  padding: 2rem; }
+
+.contact-section {
+  color: #FFFFFF;
+  margin-left: 2rem; }
+
+.contact-content {
+  float: left;
+  width: 20%; }
+  .contact-content .email {
+    padding-top: 2.125rem; }
+  .contact-content .fa-envelope, .contact-content .fa-phone {
+    margin: 0 3px 0 3px;
+    font-size: 1.25rem; }
+
+.opening-section {
+  position: relative;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .opening-section .hours {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; }
+  .opening-section .hours ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .opening-section .hours ul:first-child {
+    font-weight: 700; }
+  .opening-section .hours ul:last-child {
+    font-weight: 100; }
+  .opening-section .hours ul li {
+    padding-right: 6rem;
+    padding-bottom: 8px; }
+
+.clearfix:after {
+  clear: both; }
+
+.contact-address {
+  padding-top: 1.2rem; }
+
+.copyright {
+  float: right;
+  position: relative;
+  left: 10%; }
+
+.content {
+  text-align: center; }
+
+.fa-facebook-f, .fa-instagram, .fa-twitter {
+  margin: 1rem;
+  font-size: 1.25rem; }
 
 /*# sourceMappingURL=base.css.map */
