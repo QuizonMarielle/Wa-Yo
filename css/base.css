@@ -5,31 +5,36 @@ body, html {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.8em;
-  color: #252525;
+  color: #FFFFFF;
   background-image: url(../imgs/bg-wallpaper.jpg);
   background-size: cover;
   background-attachment: fixed;
   width: 100%; }
 
 .navbar-transparent {
-  height: 6.5625rem;
-  padding: 2.25rem; }
+  background: transparent;
+  height: 6.5625rem; }
 
-.logo {
-  color: #FFFFFF;
-  font-size: 2.5rem;
-  font-family: "Permanent Marker", serif;
-  text-shadow: 0 1px #333; }
+.navbar-nav {
+  width: 100%;
+  text-align: center; }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block; }
 
 .navbar-toggle .icon-bar {
-  background-color: #252525; }
+  background-color: black; }
 
 .navbar .navbar-nav > li > a {
   color: #FFFFFF;
-  font-size: 1rem;
-  padding-right: 1.25rem;
-  line-height: -1;
-  font-weight: bold; }
+  padding: 3rem 1.25rem;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.navbar .navbar-nav > li > .logo {
+  font-size: 3rem;
+  margin: 0 2rem;
+  padding: 3rem 1.25rem;
+  font-family: "Permanent Marker", serif; }
 
 .navbar-default .navbar-toggle {
   border-color: #FFFFFF; }
@@ -44,12 +49,10 @@ body, html {
 
 .ptext {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 100%;
-  text-align: center;
   color: #FFFFFF;
-  font-style: italic;
-  font-size: 4.3rem;
+  font-size: 4rem;
   text-transform: uppercase;
   font-family: "Playfair Display", serif; }
 
@@ -68,7 +71,7 @@ body, html {
   content: "";
   position: absolute;
   height: 10px;
-  border-bottom: 5px solid #eea804;
+  border-bottom: 5px solid #EBD38D;
   top: 8px;
   width: 10rem; }
 
@@ -155,5 +158,26 @@ body, html {
 .fa-facebook-f, .fa-instagram, .fa-twitter {
   margin: 1rem;
   font-size: 1.25rem; }
+
+.bg-border .div1 {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: block; }
+  .bg-border .div1 .div2 {
+    width: 30%;
+    background: transparent;
+    z-index: 90;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    border: 3px solid #BD9350; }
+  .bg-border .div1 .div3 {
+    height: 95%;
+    padding: 25px;
+    width: 100%;
+    border: 3px solid #BD9350;
+    background: #BD9350;
+    letter-spacing: 3px; }
 
 /*# sourceMappingURL=base.css.map */

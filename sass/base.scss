@@ -22,7 +22,7 @@ body, html {
   font-family: $font-Sans;
   font-weight: 400;
   line-height: 1.8em;
-  color: $ptext-color;
+  color: $text-white;
   background-image: url(../imgs/bg-wallpaper.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -32,27 +32,34 @@ body, html {
 
 //Nav
 .navbar-transparent {
+  background: transparent;
   height: 6.5625rem;
-  padding: 2.25rem;
 }
 
-.logo {
-  color: $text-white;
-  font-size: 2.5rem;
-  font-family: $logo-font;
-  text-shadow: 0 1px #333;
-}
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
 
 .navbar-toggle .icon-bar {
-    background-color: $ptext-color;
+    background-color: black;
 }
 
 .navbar .navbar-nav > li > a {
   color: $text-white;
-  font-size: 1rem;
-  padding-right: 1.25rem;
-  line-height: -1;
-  font-weight: bold;
+  padding: 3rem 1.25rem;
+  font-family: $font-Sans;
+}
+
+.navbar .navbar-nav > li > .logo {
+  font-size: 3rem;
+  margin: 0 2rem;
+  padding: 3rem 1.25rem;
+  font-family: $logo-font;
 }
 
 .navbar-default .navbar-toggle {
@@ -70,17 +77,12 @@ body, html {
 
 .ptext {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 100%;
-  text-align: center;
   color: $text-white;
-  font-style: italic;
-  font-size: 4.3rem;
+  font-size: 4rem;
   text-transform: uppercase;
   font-family: $font-Playfair;
-}
-
-.bg-border {
 }
 
 #bottom-margin {
@@ -103,7 +105,7 @@ body, html {
   content: "";
   position: absolute;
   height: 10px;
-  border-bottom: 5px solid #eea804;
+  border-bottom: 5px solid #EBD38D;
   top: 8px;
   width: 10rem;
 }
@@ -221,4 +223,30 @@ body, html {
 .fa-facebook-f, .fa-instagram, .fa-twitter{
   margin: 1rem;
   font-size: 1.25rem;
+}
+
+.bg-border .div1 {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: block;
+
+    .div2 {
+    width: 30%;
+    background: transparent;
+    z-index: 90;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    border: 3px solid #BD9350;
+    }
+
+    .div3 {
+    height: 95%;
+    padding: 25px;
+    width: 100%;
+    border: 3px solid #BD9350;
+    background: #BD9350;
+    letter-spacing: 3px;
+    }
 }
