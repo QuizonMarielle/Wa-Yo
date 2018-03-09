@@ -1,7 +1,6 @@
 @import "base.scss";
 
 .section-two {
-  color: $ptext-color;
   font-family: $font-Sans;
   margin-bottom: 0;
 
@@ -25,9 +24,7 @@
     bottom: 1rem;
     margin: 0 auto;
     display: block;
-    width: 18%;
-    border-radius: 100%;
-    background-color: #f4f4f4;
+    width: 25%;
   }
 }
 
@@ -43,10 +40,19 @@
     width: 3.25rem;
   }
 
+  .nutrients-container, .protein-container, .arm-container {
+    background-color: #FFFFCD;
+    padding: 2.5rem 0;
+    margin: 0 2rem;
+    border-radius: 5%;
+    width: 50%;
+    color: $ptext-color;
+  }
+
 
   h3 {
     margin-top: 2rem;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     margin-bottom: 0;
     font-weight: bold;
     font-family: $font-Playfair;
@@ -56,23 +62,22 @@
     width: 85%;
     margin: 0 1.6rem;
     padding: 1em;
-    font-size: 1rem;
-    color: $second-fcolor;
+    font-size: 0.875rem;
+    color: #8b8b8b;
     font-family: $font-Sans;
   }
 
   a {
     text-decoration: none;
-    background: $ptext-color;
   }
 }
 } // End Section Two
 
 
 .section-three {
-  background-color: $sthree-bg;
+  background-color: #033332;
   color: $text-white;
-  margin-top: 4rem;
+  margin: 8rem 0;
 
   .product-yogurt {
     float: right;

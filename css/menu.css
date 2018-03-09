@@ -6,7 +6,7 @@ body, html {
   font-weight: 400;
   line-height: 1.8em;
   color: #FFFFFF;
-  background-image: url(../imgs/bg-wallpaper.jpg);
+  background-image: url(../imgs/bg-wallpaper2.jpg);
   background-size: cover;
   background-attachment: fixed;
   width: 100%; }
@@ -17,7 +17,7 @@ body, html {
 
 .navbar-nav {
   width: 100%;
-  text-align: center; }
+  text-align: right; }
   .navbar-nav > li {
     float: none;
     display: inline-block; }

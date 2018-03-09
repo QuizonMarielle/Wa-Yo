@@ -6,7 +6,7 @@ body, html {
   font-weight: 400;
   line-height: 1.8em;
   color: #FFFFFF;
-  background-image: url(../imgs/bg-wallpaper.jpg);
+  background-image: url(../imgs/bg-wallpaper2.jpg);
   background-size: cover;
   background-attachment: fixed;
   width: 100%; }
@@ -17,7 +17,7 @@ body, html {
 
 .navbar-nav {
   width: 100%;
-  text-align: center; }
+  text-align: right; }
   .navbar-nav > li {
     float: none;
     display: inline-block; }
@@ -181,7 +181,6 @@ body, html {
     letter-spacing: 3px; }
 
 .section-two {
-  color: #252525;
   font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 0; }
   .section-two .waffle-border {
@@ -201,9 +200,7 @@ body, html {
       bottom: 1rem;
       margin: 0 auto;
       display: block;
-      width: 18%;
-      border-radius: 100%;
-      background-color: #f4f4f4; }
+      width: 25%; }
   .section-two .b-container {
     margin: 3rem;
     display: flex;
@@ -213,9 +210,16 @@ body, html {
       display: block;
       margin: 0 auto;
       width: 3.25rem; }
+    .section-two .b-container .nutrients-container, .section-two .b-container .protein-container, .section-two .b-container .arm-container {
+      background-color: #FFFFCD;
+      padding: 2.5rem 0;
+      margin: 0 2rem;
+      border-radius: 5%;
+      width: 50%;
+      color: #252525; }
     .section-two .b-container h3 {
       margin-top: 2rem;
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       margin-bottom: 0;
       font-weight: bold;
       font-family: "Playfair Display", serif; }
@@ -223,17 +227,16 @@ body, html {
       width: 85%;
       margin: 0 1.6rem;
       padding: 1em;
-      font-size: 1rem;
-      color: #696969;
+      font-size: 0.875rem;
+      color: #8b8b8b;
       font-family: "Source Sans Pro", sans-serif; }
     .section-two .b-container a {
-      text-decoration: none;
-      background: #252525; }
+      text-decoration: none; }
 
 .section-three {
-  background-color: #df0024;
+  background-color: #033332;
   color: #FFFFFF;
-  margin-top: 4rem; }
+  margin: 8rem 0; }
   .section-three .product-yogurt {
     float: right;
     margin-top: 6.025em; }
