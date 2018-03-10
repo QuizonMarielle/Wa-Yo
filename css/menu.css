@@ -6,7 +6,7 @@ body, html {
   font-weight: 400;
   line-height: 1.8em;
   color: #FFFFFF;
-  background-image: url(../imgs/bg-wallpaper2.jpg);
+  background-image: url(../imgs/bg-wallpaper.jpg);
   background-size: cover;
   background-attachment: fixed;
   width: 100%; }
@@ -14,6 +14,12 @@ body, html {
 .navbar-transparent {
   background: transparent;
   height: 6.5625rem; }
+
+.navbar-brand {
+  color: #FFFFFF;
+  font-size: 3rem;
+  line-height: 6.5rem;
+  font-family: "Permanent Marker", serif; }
 
 .navbar-nav {
   width: 100%;
@@ -27,14 +33,9 @@ body, html {
 
 .navbar .navbar-nav > li > a {
   color: #FFFFFF;
-  padding: 3rem 1.25rem;
-  font-family: "Source Sans Pro", sans-serif; }
-
-.navbar .navbar-nav > li > .logo {
-  font-size: 3rem;
-  margin: 0 2rem;
-  padding: 3rem 1.25rem;
-  font-family: "Permanent Marker", serif; }
+  padding: 8px 1.25rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem; }
 
 .navbar-default .navbar-toggle {
   border-color: #FFFFFF; }
@@ -53,11 +54,10 @@ body, html {
   width: 100%;
   color: #FFFFFF;
   font-size: 4rem;
+  text-align: center;
+  font-style: italic;
   text-transform: uppercase;
   font-family: "Playfair Display", serif; }
-
-#bottom-margin {
-  margin-bottom: 3rem; }
 
 .pimg1 {
   background-image: url(../imgs/bg-header5.jpg); }
@@ -184,8 +184,10 @@ body {
   color: #FFFFFF; }
 
 .pimg1 {
-  background-image: url(../imgs/menu-header.jpg); }
+  background-image: url(../imgs/menu-header2.jpg); }
 
+.section-four h2 {
+  font-size: 1.5rem; }
 .section-four .menu-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
@@ -199,7 +201,8 @@ body {
 .section-four .menu-three, .section-four .menu-six, .section-four .menu-nine, .section-four .menu-twelve {
   margin: 0 4rem 0 4rem; }
 .section-four .menu-one:hover {
-  background: url(../imgs/Menu1.jpg);
+  background: url(../imgs/yogurt1.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   margin-left: 5em; }
 .section-four .menu-show:hover > .menu-content {
@@ -208,25 +211,25 @@ body {
 .section-four .menu-show {
   width: 70%; }
 .section-four .menu-two:hover {
-  background: url(../imgs/Menu2.jpg);
+  background: url(../imgs/yogurt2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 5em; }
 .section-four .menu-three:hover {
-  background: url(../imgs/Menu3.jpg);
+  background: url(../imgs/yogurt3.jpg);
   background-repeat: no-repeat;
   margin-left: 5em; }
 .section-four .menu-four:hover {
-  background: url(../imgs/Menu4.jpg);
+  background: url(../imgs/yogurt4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 5em; }
 .section-four .menu-five:hover {
-  background: url(../imgs/Menu5.jpg);
+  background: url(../imgs/yogurt5.jpg);
   background-repeat: no-repeat;
   margin-left: 5em; }
 .section-four .menu-six:hover {
-  background: url(../imgs/Menu6.jpg);
+  background: url(../imgs/yogurt6.jpg);
   background-repeat: no-repeat;
   margin-left: 5em; }
 .section-four .menu-seven:hover {

@@ -5,13 +5,17 @@ body {
 }
 
 .pimg1 {
-  background-image: url(../imgs/menu-header.jpg);
+  background-image: url(../imgs/menu-header2.jpg);
 }
 
 .section-four {
 
     h1 {
       @extend .menu-headers;
+    }
+
+    h2 {
+      font-size: 1.5rem;
     }
 
   .menu-container {
@@ -40,7 +44,8 @@ body {
   }
 
   .menu-one:hover {
-    background: url(../imgs/Menu1.jpg);
+    background: url(../imgs/yogurt1.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     margin-left: 5em;
   }
@@ -54,7 +59,7 @@ body {
   }
 
   .menu-two:hover {
-    background: url(../imgs/Menu2.jpg);
+    background: url(../imgs/yogurt2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 5em;
@@ -62,26 +67,26 @@ body {
 
 
   .menu-three:hover {
-    background: url(../imgs/Menu3.jpg);
+    background: url(../imgs/yogurt3.jpg);
     background-repeat: no-repeat;
     margin-left: 5em;
   }
 
   .menu-four:hover {
-    background: url(../imgs/Menu4.jpg);
+    background: url(../imgs/yogurt4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 5em;
   }
 
   .menu-five:hover {
-    background: url(../imgs/Menu5.jpg);
+    background: url(../imgs/yogurt5.jpg);
     background-repeat: no-repeat;
     margin-left: 5em;
   }
 
   .menu-six:hover {
-    background: url(../imgs/Menu6.jpg);
+    background: url(../imgs/yogurt6.jpg);
     background-repeat: no-repeat;
     margin-left: 5em;
   }
