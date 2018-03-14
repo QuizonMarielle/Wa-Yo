@@ -67,6 +67,39 @@ body, html {
     border-color: $text-white;
 }
 
+/* ======= Nav Hover Animation ====== */
+.nav-items:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #fff;
+    -webkit-transition: scaleX(0);
+    -moz-transition: scaleX(0);
+    -o-transition: scaleX(0);
+    transform: scaleX(0);
+    margin-top: 5px;
+    transition: transform 300ms ease-in-out;
+}
+
+.nav-items:hover {
+  background-color:transparent !important;
+  color: white;
+  -webkit-transition: scaleX(1);
+  -moz-transition: scaleX(1);
+  -o-transition: scaleX(1);
+  transform: scaleX(1);
+}
+
+.nav-items:hover:after {
+  -webkit-transition: scaleX(1);
+  -moz-transition: scaleX(1);
+  -o-transition: scaleX(1);
+  transform: scaleX(1);
+}
+
+a.nav-items:after {
+  transform-origin: 0 50%;
+}
+
 .pimg {
   position: relative;
   background-position: center;
@@ -227,7 +260,6 @@ body, html {
 }
 
 .bg-border .div1 {
-    text-align: center;
     height: 100%;
     width: 100%;
     display: block;
@@ -239,15 +271,15 @@ body, html {
     display: inline-block;
     text-align: center;
     padding: 5px;
-    border: 3px solid #BD9350;
+    border: 3px solid #92620B;
     }
 
     .div3 {
     height: 95%;
-    padding: 25px;
+    padding: 2rem;
     width: 100%;
-    border: 3px solid #BD9350;
-    background: #BD9350;
+    border: 3px solid #92620B;
+    background: #92620B;
     letter-spacing: 3px;
     }
 }
