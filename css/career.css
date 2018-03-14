@@ -1,0 +1,227 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #FFFFFF;
+  background-image: url(../imgs/bg-wallpaper.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%; }
+
+.navbar-transparent {
+  background: transparent;
+  height: 6.5625rem; }
+
+.navbar-brand {
+  color: #FFFFFF;
+  font-size: 3rem;
+  line-height: 6.5rem;
+  font-family: "Permanent Marker", serif; }
+
+.navbar-nav {
+  width: 100%;
+  text-align: right; }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block; }
+
+.navbar-toggle .icon-bar {
+  background-color: black; }
+
+.navbar .navbar-nav > li > a {
+  color: #FFFFFF;
+  padding: 8px 1.25rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem; }
+
+.navbar-default .navbar-toggle {
+  border-color: #FFFFFF; }
+
+/* ======= Nav Hover Animation ====== */
+.nav-items:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #fff;
+  -webkit-transition: scaleX(0);
+  -moz-transition: scaleX(0);
+  -o-transition: scaleX(0);
+  transform: scaleX(0);
+  margin-top: 5px;
+  transition: transform 300ms ease-in-out; }
+
+.nav-items:hover {
+  background-color: transparent !important;
+  color: white;
+  -webkit-transition: scaleX(1);
+  -moz-transition: scaleX(1);
+  -o-transition: scaleX(1);
+  transform: scaleX(1); }
+
+.nav-items:hover:after {
+  -webkit-transition: scaleX(1);
+  -moz-transition: scaleX(1);
+  -o-transition: scaleX(1);
+  transform: scaleX(1); }
+
+a.nav-items:after {
+  transform-origin: 0 50%; }
+
+.pimg, .pimg1 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%; }
+
+.ptext {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 4rem;
+  text-align: center;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif; }
+
+.pimg1 {
+  background-image: url(../imgs/bg-header5.jpg); }
+
+.borders span {
+  display: inline-block;
+  position: relative; }
+
+.borders span:before,
+.borders span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-bottom: 5px solid #EBD38D;
+  top: 8px;
+  width: 10rem; }
+
+.borders span:before {
+  right: 115%;
+  margin-right: 15px; }
+
+.borders span:after {
+  left: 115%;
+  margin-left: 15px; }
+
+.menu-headers {
+  text-align: center;
+  line-height: 0.8;
+  margin: 5rem 0;
+  font-family: "Playfair Display", serif; }
+
+.black-border {
+  position: relative;
+  padding-bottom: 5px; }
+
+.black-border:after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #333;
+  width: 5rem;
+  bottom: 0;
+  left: 1px; }
+
+.contact-page {
+  margin-top: 2rem;
+  padding: 2rem; }
+
+.contact-section {
+  color: #FFFFFF;
+  margin-left: 2rem; }
+
+.contact-content {
+  float: left;
+  width: 20%; }
+  .contact-content .email {
+    padding-top: 2.125rem; }
+  .contact-content .fa-envelope, .contact-content .fa-phone {
+    margin: 0 3px 0 3px;
+    font-size: 1.25rem; }
+
+.opening-section {
+  position: relative;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .opening-section .hours {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; }
+  .opening-section .hours ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .opening-section .hours ul:first-child {
+    font-weight: 700; }
+  .opening-section .hours ul:last-child {
+    font-weight: 100; }
+  .opening-section .hours ul li {
+    padding-right: 6rem;
+    padding-bottom: 8px; }
+
+.clearfix:after {
+  clear: both; }
+
+.contact-address {
+  padding-top: 1.2rem; }
+
+.copyright {
+  float: right;
+  position: relative;
+  left: 10%; }
+
+.content {
+  text-align: center; }
+
+.fa-facebook-f, .fa-instagram, .fa-twitter {
+  margin: 1rem;
+  font-size: 1.25rem; }
+
+.bg-border .div1 {
+  height: 100%;
+  width: 100%;
+  display: block; }
+  .bg-border .div1 .div2 {
+    width: 30%;
+    background: transparent;
+    z-index: 90;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    border: 3px solid #92620B; }
+  .bg-border .div1 .div3 {
+    height: 95%;
+    padding: 2rem;
+    width: 100%;
+    border: 3px solid #92620B;
+    background: #92620B;
+    letter-spacing: 3px; }
+
+.pimg1 {
+  background-image: url(../imgs/jobs-header.jpg); }
+
+.section-two {
+  margin: 5em;
+  padding: 1em; }
+  .section-two .section-container {
+    display: flex;
+    justify-content: center; }
+  .section-two .cashier, .section-two .barrista {
+    padding: 3em; }
+  .section-two .career-content {
+    margin: 2rem 0;
+    text-align: center;
+    width: 95%; }
+
+/*# sourceMappingURL=career.css.map */
